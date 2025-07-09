@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container principal com sidebar e conteúdo */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 250px;
+    background-color: #0a468a;
+    color: white;
+    padding: 0px;
+
+}
+
+.user {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #08386E;
+
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Área principal */
+.main-content {
+    flex: 1;
+    background-color: #f4f1f1;
+    padding: 20px;
+}
+
+/* Topo com botões */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.top-bar button {
+    background: #eee;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    border-left: 5px solid orange;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+
